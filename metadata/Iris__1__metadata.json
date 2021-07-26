@@ -1,0 +1,23 @@
+{
+  "changeLog": "",
+  "cpu": 0,
+  "description": "Iris Model",
+  "displayName": "Iris",
+  "gpu": 0,
+  "inputDescription": "iris",
+  "inputType": "JSON",
+  "memory": 0,
+  "mlPackageLanguage": "PYTHON36",
+  "name": "Iris",
+  "outputDescription": "Please refer to the documentation of the Activity used to query the ML Skill.",
+  "processorType": "GPU",
+  "projectId": "[project-id]",  
+  "retrainable": true,
+  "stagingUri": "[staging-uri]",
+  "projectName": "OOB Test New",
+  "projectDescription": "Test OOB",
+  "tenantName": "UiPath",
+  "minAIFabricVersion": "v21.4.1",
+  "languageVersion": 0,
+  "contentUri": "https://uipathdownloadstaging.blob.core.windows.net/download/AIC/IrisWithTrain.zip"
+}
