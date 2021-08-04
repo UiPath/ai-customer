@@ -20,7 +20,7 @@ def main():
     if not (external_host and access_key and secret_key):
         logger.error("OBJECT_STORAGE_EXTERNAL_HOST or OBJECT_STORAGE_ACCESSKEY or OBJECT_STORAGE_SECRETKEY is not set.")
     else:
-        # validate_external_storage(external_host, access_key, secret_key) TODO temp
+        validate_external_storage(external_host, access_key, secret_key)
         validate_internal_storage(access_key, secret_key)
     logger.info("Storage validation complete.")
 
