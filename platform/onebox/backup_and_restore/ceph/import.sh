@@ -18,6 +18,10 @@ echo "$green $(date) Starting sync of object storage to local disk $default"
 readonly CREDENTIALS_FILE=$1
 readonly BASE_PATH=$2
 
+single_training_bucket=false
+single_bucket_name="train-data"
+tenant_bucket_prefix="training"
+
 # Validate file provided by user exists or not, It may be relative path or absolute path
 # $1 - File path
 function validate_file_path() {
@@ -49,17 +53,23 @@ function list_buckets() {
 function upload_blob() {
   BUCKET_NAME=${1}
   DIR_NAME=${2}
-  # create bucket if not exists
-  local check_bucket=$(s3cmd info --host=${AWS_ENDPOINT} --host-bucket= s3://${BUCKET_NAME} --no-check-certificate -q)
-  if [ -z "$check_bucket" ]; then
-    echo "$green $(date) Creating bucket ${BUCKET_NAME} $default"
-    s3cmd mb --host=${AWS_ENDPOINT} --host-bucket= s3://${BUCKET_NAME} --no-check-certificate
-  else
-    echo "$yellow $(date)  Bucket exists: ${BUCKET_NAME}, skipping $default"
+  # create bucket if not exists for multi-bucket
+  if [[ "$single_training_bucket" = false ]]; then
+    local check_bucket=$(s3cmd info --host=${AWS_ENDPOINT} --host-bucket= s3://${BUCKET_NAME} --no-check-certificate -q)
+    if [ -z "$check_bucket" ]; then
+      echo "$green $(date) Creating bucket ${BUCKET_NAME} $default"
+      s3cmd mb --host=${AWS_ENDPOINT} --host-bucket= s3://${BUCKET_NAME} --no-check-certificate
+    else
+      echo "$yellow $(date)  Bucket exists: ${BUCKET_NAME}, skipping $default"
+    fi
   fi
   # sync folder to bucket
   echo "$green $(date) Starting sync of object storage to local disk for bucket ${BUCKET_NAME} $default"
-  aws s3 --endpoint-url ${AWS_ENDPOINT} --no-verify-ssl --only-show-errors sync ${FOLDER}${DIR_NAME}/ s3://${BUCKET_NAME}
+  if [[ "$single_training_bucket" = true ]] && [[  $BUCKET_NAME == $tenant_bucket_prefix*]]; then
+    aws s3 --endpoint-url ${AWS_ENDPOINT} --no-verify-ssl --only-show-errors sync ${FOLDER}${DIR_NAME}/ s3://${single_bucket_name}/${BUCKET_NAME}
+  else
+    aws s3 --endpoint-url ${AWS_ENDPOINT} --no-verify-ssl --only-show-errors sync ${FOLDER}${DIR_NAME}/ s3://${BUCKET_NAME}
+  fi
   echo "$green $(date) Finsihed sync of object storage to local disk for bucket ${BUCKET_NAME} $default"
 }
 
@@ -80,7 +90,9 @@ function process_buckets() {
     bucket=${dir//_/-}
     # Create and sync bucket contents
     upload_blob ${bucket} ${dir}
-    update_cors_policy ${bucket} ${dir}
+    if [[ "$single_training_bucket" = false ]]; then
+      update_cors_policy ${bucket} ${dir}
+    fi
   done <<<"$DIRS"
 }
 
