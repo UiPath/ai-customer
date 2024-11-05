@@ -19,5 +19,5 @@
     "tenantName": "UiPath",
     "minAIFabricVersion": "v22.4",
     "version": 10,
-    "contentUri": "https://<placeholder-url>/publicmodels/AIC/CustomNamedEntityRecognition/9/ner_package.zip"
+    "contentUri": "https://<placeholder-url>/publicmodels/AIC/CustomNamedEntityRecognition/10/ner_package.zip"
 }
