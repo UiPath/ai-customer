@@ -9,13 +9,13 @@ $folderPath = $PSScriptRoot + "/metadata"
 
 echo $folderPath
 
-$previousCustomVersion = '22.10.13'
+$previousCustomVersion = '23.4.9'
 # Set the new custom version number
-$newCustomVersion = '22.10.14'
+$newCustomVersion = '23.4.10'
 
 # Set the text to be replaced and the replacement text
 $targetImage = '' # leave empty to generate metadata for all the models. Possible non empty values: du-semistructured, du-doc-ocr, du-doc-ocr-cpu, du-ml-document-type-text-classifier
-$newTag = 'v22.10-09.27-rc04'
+$newTag = 'v23.4-11.15-rc01'
 
 # Get a list of all files in the folder that match the specified format
 $fileList = Get-ChildItem $folderPath | Where-Object { $_.Name -match "^([a-zA-Z0-9_]+)__([0-9]+)__metadata\.json$" }
