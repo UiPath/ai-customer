@@ -21,7 +21,7 @@
   "languageVersion": 4,
   "version": 31,
   "customVersion": "23.10.8",
-  "imagePath": "du-semistructured:v23.10-01.28-rc07",
+  "imagePath": "du-semistructured:v23.10-01.29-rc09",
   "parametersFileJSON": "{\"params\": [{\"name\": \"auto_retraining\",\"type\": [\"PIPELINE\"],\"value\": \"False\",\"help\": \"Enable this option when the Pipeline you are creating is a scheduled automatic pipeline, synchronized with automatic exports from Data Manager.\",\"options\": [\"True\",\"False\"]}],\"probes\": [{\"probe\": \"startup\",\"initialDelaySeconds\": \"120\",\"periodSeconds\": \"10\",\"timeoutSeconds\": \"2\",\"successThreshold\": \"1\",\"failureThreshold\": \"60\"}]}",
   "settings": [
     {
