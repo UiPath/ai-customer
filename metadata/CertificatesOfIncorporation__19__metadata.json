@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "certificates_incorporation"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

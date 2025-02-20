@@ -28,5 +28,6 @@
       "type": "STRING",
       "value": "financial_statements"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

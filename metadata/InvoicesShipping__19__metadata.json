@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "invoices_shipping"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }
