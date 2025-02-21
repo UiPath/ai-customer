@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "cms1500"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

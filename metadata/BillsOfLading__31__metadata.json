@@ -28,5 +28,6 @@
       "type": "STRING",
       "value": "bills_of_lading"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

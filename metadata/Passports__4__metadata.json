@@ -21,5 +21,6 @@
   "languageVersion": 4,
   "version": 4,
   "customVersion": "22.4.1",
-  "contentUri": "https://<placeholder-url>/publicmodels/AIC/Passports/22.4.1/passports_package.zip"
+  "contentUri": "https://<placeholder-url>/publicmodels/AIC/Passports/22.4.1/passports_package.zip",
+  "maxAIFabricVersion": "22.4"
 }

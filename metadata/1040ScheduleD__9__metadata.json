@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "1040_schedule_d"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "passports"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

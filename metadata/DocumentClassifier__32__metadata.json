@@ -22,5 +22,6 @@
   "version": 32,
   "customVersion": "23.4.11",
   "imagePath": "du-ml-document-type-text-classifier:v23.4-01.27-rc01",
-  "parametersFileJSON": "{\"params\": [{\"name\": \"auto_retraining\",\"type\": [\"PIPELINE\"],\"value\": \"False\",\"help\": \"Enable this option when the Pipeline you are creating is a scheduled automatic pipeline, synchronized with automatic exports from Data Manager.\",\"options\": [\"True\",\"False\"]}],\"probes\": [{\"probe\": \"startup\",\"initialDelaySeconds\": \"120\",\"periodSeconds\": \"10\",\"timeoutSeconds\": \"2\",\"successThreshold\": \"1\",\"failureThreshold\": \"60\"}]}"
+  "parametersFileJSON": "{\"params\": [{\"name\": \"auto_retraining\",\"type\": [\"PIPELINE\"],\"value\": \"False\",\"help\": \"Enable this option when the Pipeline you are creating is a scheduled automatic pipeline, synchronized with automatic exports from Data Manager.\",\"options\": [\"True\",\"False\"]}],\"probes\": [{\"probe\": \"startup\",\"initialDelaySeconds\": \"120\",\"periodSeconds\": \"10\",\"timeoutSeconds\": \"2\",\"successThreshold\": \"1\",\"failureThreshold\": \"60\"}]}",
+  "maxAIFabricVersion": "23.10"
 }
