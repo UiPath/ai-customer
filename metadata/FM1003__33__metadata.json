@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "fm1003"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

@@ -28,5 +28,6 @@
       "type": "STRING",
       "value": "checks"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

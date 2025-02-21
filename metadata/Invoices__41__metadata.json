@@ -28,5 +28,6 @@
       "type": "STRING",
       "value": "invoices"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

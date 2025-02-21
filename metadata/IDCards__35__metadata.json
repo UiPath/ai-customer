@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "id_cards"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

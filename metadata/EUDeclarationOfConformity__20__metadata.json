@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "eu_declaration_conformity"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "purchase_orders"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "children_product_certificates"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "utility_bills"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

@@ -28,5 +28,6 @@
       "type": "STRING",
       "value": "vehicle_titles"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

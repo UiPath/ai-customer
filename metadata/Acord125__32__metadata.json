@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "acord125"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "payslips"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }
