@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "receipts"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

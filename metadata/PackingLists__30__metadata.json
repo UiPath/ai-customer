@@ -28,5 +28,6 @@
       "type": "STRING",
       "value": "packing_lists"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

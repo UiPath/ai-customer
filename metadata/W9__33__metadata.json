@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "w9"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "23.10"
 }

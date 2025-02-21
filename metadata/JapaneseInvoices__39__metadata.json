@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "invoices_japan"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

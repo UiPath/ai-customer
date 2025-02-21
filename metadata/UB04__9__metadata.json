@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "ub04"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }

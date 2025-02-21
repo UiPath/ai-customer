@@ -29,5 +29,6 @@
       "type": "STRING",
       "value": "remittance_advices"
     }
-  ]
+  ],
+  "maxAIFabricVersion": "24.10"
 }
