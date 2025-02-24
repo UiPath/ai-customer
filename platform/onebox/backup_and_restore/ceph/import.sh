@@ -35,6 +35,10 @@ function initialize_variables() {
   export AWS_ENDPOINT=$(cat $CREDENTIALS_FILE | jq -r 'select(.AWS_ENDPOINT != null) | .AWS_ENDPOINT')
   export AWS_ACCESS_KEY_ID=$(cat $CREDENTIALS_FILE | jq -r 'select(.AWS_ACCESS_KEY_ID != null) | .AWS_ACCESS_KEY_ID')
   export AWS_SECRET_ACCESS_KEY=$(cat $CREDENTIALS_FILE | jq -r 'select(.AWS_SECRET_ACCESS_KEY != null) | .AWS_SECRET_ACCESS_KEY')
+  echo "AWS_HOST is $AWS_HOST"
+  echo "AWS_ENDPOINT is $AWS_ENDPOINT"
+  echo "AWS_ACCESS_KEY_ID is $AWS_ACCESS_KEY_ID"
+  echo "AWS_SECRET_ACCESS_KEY is $AWS_SECRET_ACCESS_KEY"
   readonly FOLDER=${BASE_PATH}/ceph/
 
 }
