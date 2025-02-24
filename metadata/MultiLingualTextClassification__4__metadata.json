@@ -1,0 +1,23 @@
+{
+    "name": "MultiLingualTextClassification",
+    "retrainable": true,
+    "gpu": 0,
+    "processorType": "CPU",
+    "description": "This is the preview version of a generic, retrainable model for text classification. It supports the top 100 Wikipedia languages listed here (https://docs.uipath.com/ai-fabric/v0/docs/multi-lingual-text-classification#languages). This ML Package must be trained, and if deployed without training first, the deployment will fail with an error stating that the model is not trained. It is based on BERT, a self-supervised method for pretraining natural language processing systems. A GPU is recommended especially during training. A GPU delivers ~5-10x improvement in speed.",
+    "inputDescription": "Text that would be classified",
+    "outputDescription": "A JSON with predicted class name, associated confidence on that class prediction (between 0-1).",
+    "changeLog": "model 22.6.0",
+    "cpu": 1,
+    "inputType": "JSON",
+    "displayName": "MultiLingualTextClassification",
+    "memory": 0,
+    "mlPackageLanguage": "PYTHON38",
+    "projectId": "[project-id]",
+    "stagingUri": "[staging-uri]",
+    "projectName": "UiPath Language Analysis",
+    "projectDescription": "Curated Models from UiPath to analyze language in Emails, Documents, Web Pages, Text Messages, Portals and more",
+    "tenantName": "UiPath",
+    "minAIFabricVersion": "v22.40",
+    "version": 4,
+    "contentUri": "https://<placeholder-url>/publicmodels/AIC/MultiLingualTextClassification/4/bert_text_classifier_package.zip"
+}

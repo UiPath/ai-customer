@@ -1,5 +1,5 @@
 {
-  "changeLog": "Release v2020.9",
+  "changeLog": "v21-7-18",
   "cpu": 0,
   "description": "This Package provides the Endpoint required by the Intelligent Keyword Classifier activity. Please see more details in the Intelligent Keyword Classifier activity documentation here: https://docs.uipath.com/activities/docs/intelligent-keyword-classifier",
   "displayName": "IntelligentKeywordClassifier",
@@ -17,5 +17,8 @@
   "projectName": "UiPath Document Understanding",
   "projectDescription": "UiPath models to classify and extract information from images and pdfs.",
   "tenantName": "UiPath",
-  "imagePath": "registry.replicated.com/aif-core/intelligentkeywordclassifier:1"
+  "minAIFabricVersion": "v21.10",
+  "languageVersion": 3,
+  "version": 1,
+  "contentUri": "https://<placeholder-url>/publicmodels/AIC/IntelligentKeywordClassifier/1/IKC-du-svc-v21-7-18-main-4a0e8c.zip"
 }

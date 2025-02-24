@@ -8,14 +8,17 @@
   "inputType": "JSON",
   "memory": 0,
   "mlPackageLanguage": "PYTHON36",
+  "languageVersion": 0,
   "name": "QuestionAnswering",
   "outputDescription": "Answer to the questions asked in input mapped to ids\n```\n{\n   \"answer\": \"1865\"\n}\n```",
-  "processorType": "GPU",
+  "processorType": "CPU",
   "projectId": "[project-id]",  
   "retrainable": false,
   "stagingUri": "[staging-uri]",
   "projectName": "Language Comprehension",
+  "minAIFabricVersion": "v21.10",
   "projectDescription": "Models performing cognitively challenging tasks such as text summarization and question answering.",
   "tenantName": "Open-Source Packages",
-  "imagePath": "registry.replicated.com/aif-core/questionanswering:1"
+  "version": 1,
+  "contentUri": "https://<placeholder-url>/download/AIC/QuestionAnswering/1/Model.zip"
 }

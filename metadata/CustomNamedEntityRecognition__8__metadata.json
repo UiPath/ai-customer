@@ -1,0 +1,23 @@
+{
+    "name": "CustomNamedEntityRecognition",
+    "retrainable": true,
+    "gpu": 0,
+    "processorType": "CPU",
+    "description": "This model allows you to bring your own dataset tagged with entities you want to extract. The training and evaluation datasets need to be in CoNLL or JSON format as highlighted in documentation : https://docs.uipath.com/ai-fabric/v0/docs/aic-cloud-custom-named-entity-recognition#dataset-format",
+    "inputDescription": "Text in one of the 100 languages here (https://docs.uipath.com/ai-fabric/v0/docs/aic-cloud-custom-named-entity-recognition#languages) from which entities will be extracted.",
+    "outputDescription": "A Json Response with list of named entities in the text. Each element in the list has the following items in the prediction: 1. Text that was recognized; 2. Starting and ending positions of the text, character-wise; 3. Type of the named entity; 4.Confidence.",
+    "changeLog": "model 22.4.0",
+    "cpu": 1,
+    "inputType": "JSON",
+    "displayName": "CustomNamedEntityRecognition",
+    "memory": 0,
+    "mlPackageLanguage": "PYTHON38",
+    "projectId": "[project-id]",
+    "stagingUri": "[staging-uri]",
+    "projectName": "UiPath Language Analysis",
+    "projectDescription": "Curated Models from UiPath to analyze language in Emails, Documents, Web Pages, Text Messages, Portals and more",
+    "tenantName": "UiPath",
+    "minAIFabricVersion": "v22.4",
+    "version": 8,
+    "contentUri": "https://<placeholder-url>/publicmodels/AIC/CustomNamedEntityRecognition/8/ner_package.zip"
+}

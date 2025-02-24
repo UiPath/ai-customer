@@ -1,0 +1,27 @@
+{
+    "changeLog":  "",
+    "cpu":  0,
+    "description":  "Machine Learning model for extracting text and checkboxes/radio buttons from Documents. Please see more details including supported languages and link to Activities guide in the Document Understanding Guide here: https://docs.uipath.com/document-understanding/v2021.4/docs/ml-packages#uipath-document-ocr. For alternative deployment methods in high-volume scenarios see also this page: https://docs.uipath.com/document-understanding/v2021.4/docs/ocr-services",
+    "displayName":  "UiPathDocumentOCR",
+    "gpu":  0,
+    "inputDescription":  "ML Skills deployed using this ML Package can be integrated into RPA workflows using the UiPath Document OCR activity from OCR.Activities pack in the Official feed. File formats accepted include pdf, tiff, jpg or png files. In non-airgapped deployments, the activity requires the Document Understanding API Key input which you need to obtain from your UiPath Automation Cloud account, in the Licenses -\u003e Other Services view.",
+    "inputType":  "JSON",
+    "memory":  0,
+    "mlPackageLanguage":  "PYTHON37_DU",
+    "name":  "UiPathDocumentOCR",
+    "outputDescription":  "Please refer to the documentation of the Activity used to query the ML Skill.",
+    "processorType":  "GPU",
+    "projectId":  "[project-id]",
+    "retrainable":  false,
+    "stagingUri":  "[staging-uri]",
+    "projectName":  "UiPath Document Understanding",
+    "projectDescription":  "UiPath models to classify and extract information from images and pdfs.",
+    "tenantName":  "UiPath",
+    "minAIFabricVersion":  "22.10",
+    "languageVersion":  4,
+    "version":  13,
+    "customVersion":  "22.10.7",
+    "imagePath":  "du-doc-ocr:v22.10.8-rc36",
+    "parametersFileJSON":  "{\"params\": [],\"probes\": [{\"probe\": \"startup\",\"initialDelaySeconds\": \"30\",\"periodSeconds\": \"10\",\"timeoutSeconds\": \"5\",\"successThreshold\": \"1\",\"failureThreshold\": \"60\"},{\"probe\": \"readiness\",\"initialDelaySeconds\": \"30\",\"periodSeconds\": \"15\",\"timeoutSeconds\": \"45\",\"successThreshold\": \"1\",\"failureThreshold\": \"2\"},{\"probe\": \"liveness\",\"initialDelaySeconds\": \"30\",\"periodSeconds\": \"60\",\"timeoutSeconds\": \"45\",\"successThreshold\": \"1\",\"failureThreshold\": \"3\"}]}"
+}
+

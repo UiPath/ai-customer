@@ -1,0 +1,33 @@
+{
+    "name":  "InvoicesChina",
+    "retrainable":  true,
+    "gpu":  0,
+    "processorType":  "CPU",
+    "description":  "Machine Learning model for extracting commonly occurring data points from Chinese Invoices, including header fields and line items. Please see more details including supported languages and link to Activities guide in the About Licensing -\u003e Document Understanding API Key section of the UiPath Automation Cloud Guide here: https://docs.uipath.com/automation-cloud/docs/about-licensing#section-document-understanding-api-key",
+    "inputDescription":  "ML Skills deployed using this ML Package can be integrated into RPA workflows using the Machine Learning Extractor activity in the Official feed or the MLModel activity in Connect feed. File formats accepted include pdf, tiff, jpg or png files. The activities also require an API Key input which you need to obtain from your UiPath Automation Cloud account, in the Licenses -\u003e Other Services view.",
+    "outputDescription":  "Please refer to the documentation of the Activity used to query the ML Skill.",
+    "changeLog":  "",
+    "cpu":  1,
+    "inputType":  "JSON",
+    "displayName":  "InvoicesChina",
+    "memory":  0,
+    "mlPackageLanguage":  "PYTHON37_DU",
+    "projectId":  "[project-id]",
+    "stagingUri":  "[staging-uri]",
+    "projectName":  "UiPath Document Understanding",
+    "projectDescription":  "UiPath models to classify and extract information from images and pdfs.",
+    "tenantName":  "UiPath",
+    "minAIFabricVersion":  "22.10",
+    "languageVersion":  4,
+    "version":  26,
+    "customVersion":  "22.10.14",
+    "imagePath":  "du-semistructured:v22.10-10.10-rc01",
+    "parametersFileJSON":  "{\"params\": [{\"name\": \"auto_retraining\",\"type\": [\"PIPELINE\"],\"value\": \"False\",\"help\": \"Enable this option when the Pipeline you are creating is a scheduled automatic pipeline, synchronized with automatic exports from Data Manager.\",\"options\": [\"True\",\"False\"]}],\"probes\": [{\"probe\": \"startup\",\"initialDelaySeconds\": \"120\",\"periodSeconds\": \"10\",\"timeoutSeconds\": \"2\",\"successThreshold\": \"1\",\"failureThreshold\": \"60\"}]}",
+    "settings":  [
+                     {
+                         "key":  "package_type",
+                         "type":  "STRING",
+                         "value":  "invoices_china"
+                     }
+                 ]
+}

@@ -8,6 +8,7 @@
   "inputType": "JSON",
   "memory": 0,
   "mlPackageLanguage": "PYTHON36",
+  "languageVersion": 0,
   "name": "SentimentAnalysis",
   "outputDescription": "JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: \"Very Negative\", \"Negative\", \"Neutral\", \"Positive\", \"Very Positive\". For example: {\"sentiment\": \"Very Negative\", \"confidence\": 0.97}",
   "processorType": "CPU",
@@ -15,7 +16,9 @@
   "retrainable": false,
   "stagingUri": "[staging-uri]",
   "projectName": "Language Analysis",
+  "minAIFabricVersion": "v21.10",
   "projectDescription": "Models for analyzing text including language detection, sentiment analysis, and named-entity recognition.",
   "tenantName": "Open-Source Packages",
-  "imagePath": "registry.replicated.com/aif-core/sentimentanalysis:1"
+  "version": 1,
+  "contentUri": "https://<placeholder-url>/download/AIC/SentimentAnalysis/1/Model.zip"
 }

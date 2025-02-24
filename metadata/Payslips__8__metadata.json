@@ -1,0 +1,34 @@
+{
+    "name":  "Payslips",
+    "retrainable":  true,
+    "gpu":  0,
+    "processorType":  "CPU",
+    "description":  "Machine Learning model for extracting commonly occurring data points from Payslips. See the documentation page for this model for more details https://docs.uipath.com/document-understanding/automation-cloud/latest/user-guide/payslips-ml-package",
+    "inputDescription":  "ML Skills deployed using this ML Package can be integrated into RPA workflows using the Machine Learning Extractor activity in the Official feed or the MLModel activity in Connect feed. Accepted file formats: pdf, tiff, jpg or png files. The activities also require an API Key input which you need to obtain from your UiPath Automation Cloud account, in the Licenses -\u003e Other Services view.",
+    "outputDescription":  "Please refer to the documentation of the Activity used to query the ML Skill.",
+    "changeLog":  "",
+    "cpu":  1,
+    "inputType":  "JSON",
+    "displayName":  "Payslips",
+    "memory":  0,
+    "mlPackageLanguage":  "PYTHON37_DU",
+    "projectId":  "[project-id]",
+    "stagingUri":  "[staging-uri]",
+    "projectName":  "UiPath Document Understanding",
+    "projectDescription":  "UiPath models to classify and extract information from images and pdfs.",
+    "tenantName":  "UiPath",
+    "minAIFabricVersion":  "22.10",
+    "languageVersion":  4,
+    "version":  8,
+    "customVersion":  "23.4.6",
+    "imagePath":  "du-semistructured:v23.4.5-rc83",
+    "parametersFileJSON":  "{\"params\": [{\"name\": \"auto_retraining\",\"type\": [\"PIPELINE\"],\"value\": \"False\",\"help\": \"Enable this option when the Pipeline you are creating is a scheduled automatic pipeline, synchronized with automatic exports from Data Manager.\",\"options\": [\"True\",\"False\"]}],\"probes\": [{\"probe\": \"startup\",\"initialDelaySeconds\": \"120\",\"periodSeconds\": \"10\",\"timeoutSeconds\": \"2\",\"successThreshold\": \"1\",\"failureThreshold\": \"60\"}]}",
+    "settings":  [
+                     {
+                         "key":  "package_type",
+                         "type":  "STRING",
+                         "value":  "payslips"
+                     }
+                 ]
+}
+

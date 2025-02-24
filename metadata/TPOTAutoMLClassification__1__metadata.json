@@ -9,7 +9,7 @@
   "memory": 0,
   "mlPackageLanguage": "PYTHON36",
   "name": "TPOTAutoMLClassification",
-  "outputDescription":"JSON with predicted class, associated confidence on that class prediction (between 0-1) and label name. Label names are returned only if the label encoding was performed by the pipeline, within AI Fabric. Some scikit-learn models do not support confidence scores. If the output of the optimization pipeline is a scikit-learn model which does not support confidence scores the output will only contain the predicted class. Ex: { \n\n  \"predictions\": 0,  \n\n  \"confidences\": 0.6, \n\n  \"labels\": “yes”  \n\n} \n\nOr if label encoding was done outside of the model: { \n\n  \"predictions\": 0,  \n\n  \"confidences\": 0.6, \n\n}   ",  "processorType": "CPU",
+  "outputDescription":"JSON with predicted class, associated confidence on that class prediction (between 0-1) and label name. Label names are returned only if the label encoding was performed by the pipeline, within AI Center. Some scikit-learn models do not support confidence scores. If the output of the optimization pipeline is a scikit-learn model which does not support confidence scores the output will only contain the predicted class. Ex: { \n\n  \"predictions\": 0,  \n\n  \"confidences\": 0.6, \n\n  \"labels\": “yes”  \n\n} \n\nOr if label encoding was done outside of the model: { \n\n  \"predictions\": 0,  \n\n  \"confidences\": 0.6, \n\n}   ",  "processorType": "CPU",
   "processorType": "CPU",
   "projectId": "[project-id]",  
   "retrainable": true,
@@ -17,5 +17,8 @@
   "projectName": "Tabular Data",
   "projectDescription": "Models for analyzing tabular data including classification and regression ML Packages",
   "tenantName": "Open-Source Packages",
-  "imagePath": "registry.replicated.com/aif-core/tpotautomlclassification:1"
+  "minAIFabricVersion": "v21.10",
+  "languageVersion": 0,
+  "version": 1,
+  "contentUri": "https://<placeholder-url>/publicmodels/AIC/TPOTAutoMLClassification/1/TPOTAutoMLClassification.zip"
 }
